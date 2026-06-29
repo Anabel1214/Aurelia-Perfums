@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Parfums</title>
+    <meta name="description" content="Colección de perfumes elegantes y exclusivas con carrito de compras." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="#hero" class="brand">Aurelia Parfums</a>
+      <nav class="nav-links">
+        <a href="#catalog">Catálogo</a>
+        <a href="#story">Nuestra historia</a>
+        <a href="#cart" class="cart-link">Carrito <span id="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Edición limitada</p>
+          <h1>Fragancias que hablan con elegancia.</h1>
+          <p>
+            Descubre una colección de perfumes refinados, con notas intensas,
+            sofisticadas y memorables para cada ocasión.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary">Ver colección</a>
+            <button id="open-cart" class="btn btn-secondary">Ver carrito</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="Img/CLUB DE NUIT.webp" alt="Perfume Club de Nuit" />
+          <div class="hero-card-info">
+            <p>Más vendido</p>
+            <h3>Club de Nuit</h3>
+            <span>Oriental intenso · 100 ml</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights">
+        <article>
+          <h3>Notas únicas</h3>
+          <p>Perfiles modernos, amaderados, cítricos y gourmand.</p>
+        </article>
+        <article>
+          <h3>Entrega premium</h3>
+          <p>Presentación discreta y elegante en cada pedido.</p>
+        </article>
+        <article>
+          <h3>Calidad garantizada</h3>
+          <p>Fragancias seleccionadas para un estilo sofisticado.</p>
+        </article>
+      </section>
+
+      <section id="catalog" class="catalog-section">
+        <div class="section-heading">
+          <p class="eyebrow">Catálogo</p>
+          <h2>Perfumes seleccionados</h2>
+        </div>
+        <div id="products-grid" class="products-grid"></div>
+      </section>
+
+      <section id="story" class="story-section">
+        <div>
+          <p class="eyebrow">Nuestra esencia</p>
+          <h2>Una experiencia olfativa minimalista y luminosa.</h2>
+          <p>
+            Cada perfume ha sido pensado para combinar modernidad, identidad y
+            distinción. La colección reúne aromas que evocan viaje, sofisticación
+            y memorias sensoriales.
+          </p>
+        </div>
+        <div class="story-card">
+          <p>“Elegancia en cada gota.”</p>
+        </div>
+      </section>
+    </main>
+
+    <aside id="cart" class="cart-panel">
+      <div class="cart-header">
+        <h3>Tu carrito</h3>
+        <button id="close-cart" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <button id="checkout-btn" class="btn btn-primary full-width">Finalizar compra</button>
+      </div>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
+    <footer class="footer">
+      <p>© 2026 Aurelia Parfums · Fragancias exclusivas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

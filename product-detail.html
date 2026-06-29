@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle del perfume · Aurelia Parfums</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="index.html" class="brand">Aurelia Parfums</a>
+      <nav class="nav-links">
+        <a href="index.html#catalog">Catálogo</a>
+        <a href="index.html#story">Nuestra historia</a>
+        <a href="index.html#cart" class="cart-link">Carrito <span id="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main class="detail-page">
+      <a href="index.html#catalog" class="back-link">← Volver al catálogo</a>
+      <section id="detail-card" class="detail-card"></section>
+    </main>
+
+    <aside id="cart" class="cart-panel">
+      <div class="cart-header">
+        <h3>Tu carrito</h3>
+        <button id="close-cart" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <button id="checkout-btn" class="btn btn-primary full-width">Finalizar compra</button>
+      </div>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
+    <footer class="footer">
+      <p>© 2026 Aurelia Parfums · Fragancias exclusivas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product-detail.js"></script>
+  </body>
+</html>
